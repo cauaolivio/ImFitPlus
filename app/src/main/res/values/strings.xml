@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ImFitPlus</string>
+    <string name="boas_vindas_titulo">Descubra seu Perfil de Saúde</string>
+    <string name="boas_vindas_mensagem">Descubra seu perfil de saúde e receba recomendações personalizadas.</string>
+    <string name="comece_aqui">Comece aqui</string>
+    <string name="main_subtitle">Bem-vindo(a)</string>
 </resources>
