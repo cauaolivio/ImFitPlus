@@ -40,4 +40,14 @@
     <string name="botao_calcular_peso_ideal">Calcular Peso Ideal</string>
     <string name="label_tmb">Taxa Metabólica Basal (TMB)</string>
     <string name="label_gasto_diario_total">Gasto Diário Total</string>
+    <string name="peso_ideal_subtitle">Peso Ideal</string>
+    <string name="titulo_peso_ideal">Sua Meta de Peso Ideal</string>
+    <string name="label_peso_ideal">Peso Ideal</string>
+    <string name="botao_finalizar_calculos">Finalizar e Voltar ao Início</string>
+    <string name="label_diferenca_peso">Diferença de peso:</string>
+
+    <string name="valor_peso_kg">%s kg</string>
+    <string name="diferenca_perder_simples">Você precisa perder %1$s kg.</string>
+    <string name="diferenca_ganhar_simples">Você precisa ganhar %1$s kg.</string>
+    <string name="diferenca_ideal_simples">Parabéns! Seu peso está na faixa ideal.</string>
 </resources>

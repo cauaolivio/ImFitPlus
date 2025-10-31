@@ -16,7 +16,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -32,6 +31,10 @@
             android:name=".GastoCaloricoActivity"
             android:exported="false"
             android:label="@string/gasto_calorico_subtitle" />
+        <activity
+            android:name=".PesoIdealActivity"
+            android:exported="false"
+            android:label="@string/peso_ideal_subtitle" />
     </application>
 
 </manifest>
