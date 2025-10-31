@@ -28,6 +28,10 @@
             android:name=".ResultadoImcActivity"
             android:exported="false"
             android:label="@string/resultado_imc_subtitle" />
+        <activity
+            android:name=".GastoCaloricoActivity"
+            android:exported="false"
+            android:label="@string/gasto_calorico_subtitle" />
     </application>
 
 </manifest>

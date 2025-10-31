@@ -34,5 +34,10 @@
     <string name="categoria_obesidade">Obesidade</string>
     <string name="erro_dados_nao_encontrados">Erro ao carregar dados do perfil. Voltando à tela inicial.</string>
     <string name="botao_calcular_gasto_calorico">Calcular Gasto Calórico</string>
-
+    <string name="gasto_calorico_subtitle">Gasto Calórico</string>
+    <string name="titulo_gasto_calorico">Cálculo de Necessidade Calórica</string>
+    <string name="valor_kcal_dia">%d kcal/dia</string>
+    <string name="botao_calcular_peso_ideal">Calcular Peso Ideal</string>
+    <string name="label_tmb">Taxa Metabólica Basal (TMB)</string>
+    <string name="label_gasto_diario_total">Gasto Diário Total</string>
 </resources>

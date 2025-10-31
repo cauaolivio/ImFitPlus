@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GastoCaloricoActivity">
+
+    <include
+        android:id="@+id/toolbar_in"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/gasto_calorico_titulo_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/titulo_gasto_calorico"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tmb_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_tmb"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/gasto_calorico_titulo_tv"
+        app:layout_constraintStart_toStartOf="@id/gasto_calorico_titulo_tv"/>
+
+    <TextView
+        android:id="@+id/tmb_valor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/tmb_label_tv"
+        app:layout_constraintStart_toStartOf="@id/tmb_label_tv"
+        tools:text="1500 kcal/dia"/>
+
+    <TextView
+        android:id="@+id/gasto_diario_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_gasto_diario_total"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tmb_valor_tv"
+        app:layout_constraintStart_toStartOf="@id/gasto_calorico_titulo_tv"/>
+
+    <TextView
+        android:id="@+id/gasto_diario_valor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/gasto_diario_label_tv"
+        app:layout_constraintStart_toStartOf="@id/gasto_diario_label_tv"
+        tools:text="2250 kcal/dia"/>
+
+    <Button
+        android:id="@+id/calcular_peso_ideal_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_calcular_peso_ideal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/voltar_bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/voltar_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_voltar"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
