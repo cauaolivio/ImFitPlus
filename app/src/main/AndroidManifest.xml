@@ -24,6 +24,10 @@
             android:name=".DadosPessoaisActivity"
             android:exported="false"
             android:label="@string/dados_pessoais_subtitle" />
+        <activity
+            android:name=".ResultadoImcActivity"
+            android:exported="false"
+            android:label="@string/resultado_imc_subtitle" />
     </application>
 
 </manifest>

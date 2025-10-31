@@ -24,4 +24,15 @@
     <string name="erro_campo_vazio">Preencha todos os campos obrigatórios.</string>
     <string name="erro_dados_numericos">Altura, Peso e Idade devem ser números válidos e positivos.</string>
     <string name="botao_voltar">Voltar</string>
+    <string name="resultado_imc_subtitle">Resultado do IMC</string>
+    <string name="resultado_nome">Resultado para: %s</string>
+    <string name="label_seu_imc">Seu IMC é</string>
+    <string name="label_categoria_imc">Classificação</string>
+    <string name="categoria_abaixo_peso">Abaixo do peso</string>
+    <string name="categoria_normal">Normal</string>
+    <string name="categoria_sobrepeso">Sobrepeso</string>
+    <string name="categoria_obesidade">Obesidade</string>
+    <string name="erro_dados_nao_encontrados">Erro ao carregar dados do perfil. Voltando à tela inicial.</string>
+    <string name="botao_calcular_gasto_calorico">Calcular Gasto Calórico</string>
+
 </resources>
