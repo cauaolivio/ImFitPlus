@@ -4,4 +4,24 @@
     <string name="boas_vindas_mensagem">Descubra seu perfil de saúde e receba recomendações personalizadas.</string>
     <string name="comece_aqui">Comece aqui</string>
     <string name="main_subtitle">Bem-vindo(a)</string>
+    <string name="dados_pessoais_subtitle">Dados Pessoais</string>
+    <string name="label_nome">Nome completo</string>
+    <string name="label_idade">Idade (anos)</string>
+    <string name="label_sexo">Sexo</string>
+    <string name="radio_masculino">Masculino</string>
+    <string name="radio_feminino">Feminino</string>
+    <string name="label_altura">Altura (metros, ex: 1.75)</string>
+    <string name="label_peso">Peso (kg, ex: 70.5)</string>
+    <string name="label_nivel_atividade">Nível de Atividade</string>
+    <string name="checkbox_confirmar">Confirmo que os dados estão corretos.</string>
+    <string name="botao_calcular_imc">Calcular IMC</string>
+    <string-array name="niveis_atividade">
+        <item>Sedentário</item>
+        <item>Leve </item>
+        <item>Moderado</item>
+        <item>Intenso</item>
+    </string-array>
+    <string name="erro_campo_vazio">Preencha todos os campos obrigatórios.</string>
+    <string name="erro_dados_numericos">Altura, Peso e Idade devem ser números válidos e positivos.</string>
+    <string name="botao_voltar">Voltar</string>
 </resources>

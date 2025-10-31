@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DadosPessoaisActivity">
+
+    <include
+        android:id="@+id/toolbar_in"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/nome_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_nome"
+                android:inputType="textCapWords"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/idade_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_idade"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/nome_et"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/sexo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_sexo"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/idade_et"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/sexo_rg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/sexo_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <RadioButton
+                    android:id="@+id/masculino_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_masculino"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/feminino_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_feminino"
+                    android:layout_marginStart="16dp"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/altura_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_altura"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/sexo_rg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/peso_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_peso"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/altura_et"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/atividade_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nivel_atividade"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/peso_et"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Spinner
+                android:id="@+id/atividade_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/niveis_atividade"
+                android:paddingVertical="12dp"
+                app:layout_constraintTop_toBottomOf="@id/atividade_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/calcular_imc_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/botao_calcular_imc"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@id/atividade_spinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/voltar_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/botao_voltar"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/calcular_imc_bt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
