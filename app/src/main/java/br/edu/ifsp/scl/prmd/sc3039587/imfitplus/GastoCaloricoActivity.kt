@@ -23,7 +23,12 @@ class GastoCaloricoActivity : AppCompatActivity() {
         supportActionBar?.subtitle = getString(R.string.gasto_calorico_subtitle)
 
         dadosPessoais = intent.getParcelableExtra(Constant.EXTRA_PERFIL)
-            ?: run { Toast.makeText(this, R.string.erro_dados_nao_encontrados, Toast.LENGTH_SHORT).show(); finish(); return }
+            ?: run {
+                Toast.makeText(
+                this, R.string.erro_dados_nao_encontrados,Toast.LENGTH_SHORT).show();
+                finish()
+                return
+            }
 
         calcularEExibirGastoCalorico()
 

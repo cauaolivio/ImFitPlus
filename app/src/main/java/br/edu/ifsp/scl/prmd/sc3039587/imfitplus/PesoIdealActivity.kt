@@ -35,7 +35,6 @@ class PesoIdealActivity : AppCompatActivity() {
             finish()
             return
         }
-
         calcularEExibirPesoIdeal()
 
         apib.finalizarBt.setOnClickListener {

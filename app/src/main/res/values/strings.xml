@@ -45,7 +45,6 @@
     <string name="label_peso_ideal">Peso Ideal</string>
     <string name="botao_finalizar_calculos">Finalizar e Voltar ao Início</string>
     <string name="label_diferenca_peso">Diferença de peso:</string>
-
     <string name="valor_peso_kg">%s kg</string>
     <string name="diferenca_perder_simples">Você precisa perder %1$s kg.</string>
     <string name="diferenca_ganhar_simples">Você precisa ganhar %1$s kg.</string>

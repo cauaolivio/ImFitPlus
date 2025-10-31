@@ -22,7 +22,6 @@ class DadosPessoaisActivity : AppCompatActivity() {
 
         adpb.calcularImcBt.setOnClickListener {
             val dados = verificarPreenchimentoEEnviar()
-
             if (dados != null) {
                 val intent = Intent(this, ResultadoImcActivity::class.java).apply {
                     putExtra(Constant.EXTRA_PERFIL, dados)
@@ -32,7 +31,6 @@ class DadosPessoaisActivity : AppCompatActivity() {
                 Toast.makeText(this, R.string.erro_campo_vazio, Toast.LENGTH_SHORT).show()
             }
         }
-
         adpb.voltarBt.setOnClickListener {
             finish()
         }
